@@ -1,0 +1,10 @@
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\bin\Debug\BatteryTracking.exe.config
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\bin\Debug\BatteryTracking.exe
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\bin\Debug\BatteryTracking.pdb
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.csprojAssemblyReference.cache
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.Form1.resources
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.Properties.Resources.resources
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.csproj.GenerateResource.cache
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.csproj.CoreCompileInputs.cache
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.exe
+C:\Users\ferha\Documents\GitHub\SimpleBatteryTrackingAndWarningSystem\BatteryTracking\BatteryTracking\obj\Debug\BatteryTracking.pdb

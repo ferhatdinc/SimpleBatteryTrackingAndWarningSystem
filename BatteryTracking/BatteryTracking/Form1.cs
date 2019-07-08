@@ -18,19 +18,35 @@ namespace BatteryTracking
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
+        { 
             var task = Task.Run(async () =>
             {
                 for (; ; )
                 {
-                    await Task.Delay(30000);
-                    float batteryPercent = CheckBatteryLifePercent();
-                    
-                    if (batteryPercent == 100)
+                    float batteryPercent; 
+                    BatteryChargeStatus chargeStatus = CheckBatteryChargeStatus();
+                    switch (chargeStatus)
                     {
-                        MessageBox.Show("Pili Koruma Moduna Al : " + batteryPercent + "%");
-                    }
+                        case BatteryChargeStatus.Critical:
+                            await Task.Delay(450000);//45minutes
+                            break;
+                        case BatteryChargeStatus.Low:
+                            await Task.Delay(450000);//45minutes
+                            break;
+                        case BatteryChargeStatus.High:
+                            {
+                                batteryPercent = CheckBatteryLifePercent();
+                                if (batteryPercent == 100)
+                                {
+                                    MessageBox.Show("Please Activate Save Mode");
+                                    await Task.Delay(5000);//5second
+                                }
+                                else await Task.Delay(50000);//5minutes
+                            }
+                            break;
+                        default:
+                            break;
+                    } 
                 }
             });
 
@@ -39,6 +55,11 @@ namespace BatteryTracking
         public float CheckBatteryLifePercent()
         {
             return SystemInformation.PowerStatus.BatteryLifePercent * 100;
+                    
+        }
+        public BatteryChargeStatus CheckBatteryChargeStatus()
+        {
+            return SystemInformation.PowerStatus.BatteryChargeStatus;
         }
     }
 }
