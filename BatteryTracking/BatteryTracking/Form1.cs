@@ -20,6 +20,25 @@ namespace BatteryTracking
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            var task = Task.Run(async () =>
+            {
+                for (; ; )
+                {
+                    await Task.Delay(30000);
+                    float batteryPercent = CheckBatteryLifePercent();
+                    
+                    if (batteryPercent == 100)
+                    {
+                        MessageBox.Show("Pili Koruma Moduna Al : " + batteryPercent + "%");
+                    }
+                }
+            });
+
+        }
+
+        public float CheckBatteryLifePercent()
+        {
+            return SystemInformation.PowerStatus.BatteryLifePercent * 100;
         }
     }
 }
